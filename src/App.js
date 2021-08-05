@@ -3,6 +3,8 @@ import './App.css';
 import ChildRender from './ChildRender';
 
 function App() {
+  console.log(`inside App component / ${process.env.NODE_ENV}`);
+  console.log(`inside App component / ${process.env.REACT_APP_API}`);
   return (
     <div className="App">
       <header className="App-header">
