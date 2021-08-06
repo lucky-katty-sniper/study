@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ChildRender from './ChildRender';
+import ChildFetch from './ChildFetch';
 
 function App() {
   console.log(`inside App component / ${process.env.NODE_ENV}`);
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <ChildRender />
+        <ChildFetch />
       </header>
     </div>
   );
