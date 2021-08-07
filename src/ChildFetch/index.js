@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 
 export default function ChildFetch() {
 
@@ -10,7 +11,7 @@ export default function ChildFetch() {
      setError("");
      setLoading(true);
 
-     fetch("https://example.com")
+     fetch("https://my-json-server.typicode.com/lucky-katty-sniper/json/posts")
        .then(res => res.json())
        .then(val => setData(val))
        .catch(err => setError(err.message))
